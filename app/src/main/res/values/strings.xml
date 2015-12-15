@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HealthClub</string>
+
+    <string name="title_section1">俯卧撑练习</string>
+    <string name="title_section2">腹肌撕裂者</string>
+    <string name="title_section3">羽毛球视频</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">设置</string>
+    <string name="title_activity_fwc">FWCActivity</string>
+
+    <string name="title_activity_juanfu">juanfu</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_juan_fu">JuanFuActivity</string>
+
+</resources>
