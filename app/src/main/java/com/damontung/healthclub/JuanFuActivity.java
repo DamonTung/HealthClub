@@ -9,6 +9,10 @@ import android.util.Log;
 
 
 import java.io.File;
+import android.net.*;
+
+
+import android.net.Uri;
 import java.util.Objects;
 
 import io.vov.vitamio.MediaPlayer;
@@ -41,7 +45,13 @@ public class JuanFuActivity extends Activity {
         if(path == ""){
             path = Environment.getExternalStorageDirectory().getPath();
         }else{
-            mVideoView.setVideoPath(pathTest);
+            mVideoView.setVideoPath(moviesPath + videoName);
+            try {
+                Uri uri = Uri.parse(moviesPath+videoName);
+                mVideoView.setVideoURI(uri);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
             mVideoView.setFocusable(true);
             //mVideoView.setVideoPath(path + videoType);
             mVideoView.setMediaController(new MediaController(this));
